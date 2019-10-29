@@ -13,8 +13,8 @@ def reverse_words(input_string):
     words = words[::-1]
     # put back together in a string
     rev = ''
-    for i in words
-        rev += i + ' '
+    for i in words:
+        rev +=  i + ' '
     # return the string
     return rev
 
@@ -27,10 +27,10 @@ def main():
     my_string = 'Imperial College London'
 
     # count number of words in string
-    reverse_string = reverse_words(my_String)
+    reverse_string = reverse_words(my_string)
 
     # print how many words were counted
-    print 'The original string is: {}'.format(my_string)
+    print('The original string is: {}'.format(my_string))
     print('and the words reversed is: {}'.format(reverse_string))
 
 if __name__ == '__main__':

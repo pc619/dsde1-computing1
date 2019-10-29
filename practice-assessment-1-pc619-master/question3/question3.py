@@ -8,7 +8,7 @@ from the commandline.
 def count_words(input_string):
     '''Counts the number of words between spaces'''
     words = input_string.split()
-    return len(word)
+    return len(words)
 
 
 
@@ -18,11 +18,10 @@ def main():
     my_string = 'Imperial College London'
 
     # count number of words in string
-    num_words = count_words(my_String)
+    num_words = count_words(my_string)
 
     # print how many words were counted
-    print('There are {} words in the string:'.format(num_words))
-    print my_string 
+    print('There are ', str(num_words), ' words in the string:')
 
 if __name__ == '__main__':
     main()
