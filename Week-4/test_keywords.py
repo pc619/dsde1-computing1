@@ -69,7 +69,7 @@ class TestSum(unittest.TestCase):
         Test list_average
         '''
         result = k.list_average([1,9,1,8,2,4,5,2,4,7,5,5,3], "median")
-        self.assertEqual(result, 4)
+        self.assertEqual(result, 5)
 
     def test_list_mode(self):
         '''
@@ -84,7 +84,7 @@ class TestSum(unittest.TestCase):
         Test list_average
         '''
         result = k.list_average([1,9,1,8,2,4,5,2,4,7,5,5,3], "mode")
-        self.assertEqual(result, [5])
+        self.assertEqual(result, 5)
 
  
     def test_list_mode2(self):
@@ -92,7 +92,7 @@ class TestSum(unittest.TestCase):
         Test list_average
         '''
         result = k.list_average([1,9,1,8,2,4,5,2,11,4,7,5,5,3,11,11], "mode")
-        self.assertEqual(set(result), set([5,11]))
+        self.assertEqual(set(result), set(5,11))
 
  
 
