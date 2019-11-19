@@ -10,16 +10,15 @@ def collatz(number = 4):
     print(value)
     return value
 
-def run_collatz():
-    end_of_collatz = False
-    print('Input a number')
-    number = int(input())
 
-    while end_of_collatz == False:
-        number = collatz(number)
+end_of_collatz = False
+print('Input a number')
+number = int(input())
 
-        if number == 1:
-            end_of_collatz = True
+while end_of_collatz == False:
+    number = collatz(number)
+    if number == 1:
+        end_of_collatz = True
 
     
  
