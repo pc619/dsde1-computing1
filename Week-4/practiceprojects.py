@@ -14,13 +14,15 @@ def collatz(number = 4):
 end_of_collatz = False
 print('Input a number')
 number = int(input())
+calc = 0
 
 while end_of_collatz == False:
     number = collatz(number)
+    calc+=1
     if number == 1:
         end_of_collatz = True
 
-    
+print(calc)    
  
 def comma_code(input_list):
     
